@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link rel="stylesheet" href="JS/script.js" /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -12,6 +13,7 @@
     >
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/general.css" />
+    <link rel="stylesheet" href="CSS/queries.css" />
     <title>Omnifood</title>
   </head>
   <body>
@@ -19,6 +21,7 @@
       <a href="#">
         <img class="logo" src="img/omnifood-logo.png" alt="Omnifood Logo" />
       </a>
+
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a href="#" class="main-nav-link">How it works</a></li>
@@ -28,6 +31,11 @@
           <li><a href="#" class="main-nav-link nav-cta">Try for free</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <!-- HERO -->
@@ -439,7 +447,7 @@
               <p class="plan-price"><span>$</span>399</p>
               <p class="plan-text">per month. That's just 13$ per meal!</p>
             </header>
-            <ul class="list">
+            <ul class="list-items">
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
                 <span>1 meal per day</span>
@@ -453,6 +461,7 @@
                 <span>Delivery is free</span>
               </li>
               <li class="list-item">
+                <ion-icon class="list-icon" name="close-outline"></ion-icon>
                 <span>Get access to latest recipes</span>
               </li>
             </ul>
@@ -468,7 +477,7 @@
               <p class="plan-price"><span>$</span>649</p>
               <p class="plan-text">per month. That's just 11$ per meal!</p>
             </header>
-            <ul class="list">
+            <ul class="list-items">
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
                 <span><strong>2 meals</strong> per day</span>
@@ -673,5 +682,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="JS/script.js"></script>
   </body>
 </html>
